@@ -1,0 +1,27 @@
+{
+  "name": "konstshoppen",
+  "version": "1.0.0",
+  "description": "Grupparbete ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elgen98/Konstshoppen.git"
+  },
+  "keywords": [
+    "Konst",
+    "Shop",
+    "Art",
+    "Köp",
+    "Skulptur",
+    "Keramik"
+  ],
+  "author": "Elliot, Sofia, Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elgen98/Konstshoppen/issues"
+  },
+  "homepage": "https://github.com/elgen98/Konstshoppen#readme"
+}
