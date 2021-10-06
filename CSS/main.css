@@ -5,7 +5,6 @@ main {
 main #main-content {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
   justify-content: center;
   background-color: white;
   width: 80%;
@@ -16,7 +15,7 @@ main #main-content .category {
   align-items: center;
   justify-content: center;
 }
-main #main-content .category a img {
+main #main-content .category img {
   width: 200px;
   height: 200px;
 }
