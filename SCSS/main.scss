@@ -1,30 +1,31 @@
 main {
-	display: flex;
-	justify-content: center;
-	#main-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		background-color: rgb(255, 255, 255);
-		width: 80%;
-			img {
-				width: 200px;
-				height: 200px;
-			}
-		.ceramics {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			#bluesky {
-				display: flex;
-				flex-direction: column;
-				
-			#bowl {
-			display: flex;
-			flex-direction: column;
-			}
-		}
-	}
-}
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  #main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    .ceramics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      #bluesky,
+      #bowl,
+      #plates,
+      #pots,
+      #vase,
+      #bowl2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 300px;
+      }
+    }
+  }
 }
