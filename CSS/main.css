@@ -1,15 +1,15 @@
 #main-wrapper {
   display: flex;
   justify-content: center;
-  background-color: beige;
-  width: 100%;
+  background-color: whitesmoke;
 }
 #main-wrapper main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: space-between;
   justify-content: center;
-  background-color: cadetblue;
+  background-color: white;
+  width: 80%;
 }
 #main-wrapper main .category {
   display: flex;
@@ -18,8 +18,8 @@
   justify-content: center;
 }
 #main-wrapper main .category a img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
