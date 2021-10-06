@@ -9,15 +9,23 @@ main #main-content {
   background-color: white;
   width: 80%;
 }
+main #main-content img {
+  width: 200px;
+  height: 200px;
+}
 main #main-content .ceramics {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-main #main-content .ceramics img {
-  width: 200px;
-  height: 200px;
+main #main-content .ceramics #bluesky {
+  display: flex;
+  flex-direction: column;
+}
+main #main-content .ceramics #bluesky #bowl {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
