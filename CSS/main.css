@@ -9,13 +9,13 @@ main #main-content {
   background-color: white;
   width: 80%;
 }
-main #main-content .category {
+main #main-content .ceramics {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-main #main-content .category img {
+main #main-content .ceramics img {
   width: 200px;
   height: 200px;
 }
