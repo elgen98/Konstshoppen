@@ -1,10 +1,9 @@
 body {
   padding-top: 20vh;
+  font-family: century gothic;
 }
 
 main {
-  margin-top: 50px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -15,23 +14,83 @@ main #main-content {
   background-color: white;
   width: 90%;
 }
-main #main-content .ceramics {
+main #main-content h3 {
+  text-align: center;
+  padding: 20px;
+}
+main #main-content #ceramics,
+main #main-content #sculpture,
+main #main-content #paintings {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  padding-bottom: 50px;
 }
-main #main-content .ceramics #bluesky,
-main #main-content .ceramics #bowl,
-main #main-content .ceramics #plates,
-main #main-content .ceramics #pots,
-main #main-content .ceramics #vase,
-main #main-content .ceramics #bowl2 {
+main #main-content #ceramics .ceramic-img,
+main #main-content #ceramics .sculpture-img,
+main #main-content #ceramics .painting-img,
+main #main-content #sculpture .ceramic-img,
+main #main-content #sculpture .sculpture-img,
+main #main-content #sculpture .painting-img,
+main #main-content #paintings .ceramic-img,
+main #main-content #paintings .sculpture-img,
+main #main-content #paintings .painting-img {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 300px;
+}
+main #main-content #ceramics .ceramic-img img,
+main #main-content #ceramics .sculpture-img img,
+main #main-content #ceramics .painting-img img,
+main #main-content #sculpture .ceramic-img img,
+main #main-content #sculpture .sculpture-img img,
+main #main-content #sculpture .painting-img img,
+main #main-content #paintings .ceramic-img img,
+main #main-content #paintings .sculpture-img img,
+main #main-content #paintings .painting-img img {
+  box-shadow: 0 2px 3px 0 rgba(179, 179, 185, 0.555), 0 4px 10px 0 rgba(161, 161, 167, 0.562);
+}
+
+@media screen and (min-width: 768px) {
+  main #main-content #ceramics,
+main #main-content #sculpture,
+main #main-content #paintings {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main #main-content #ceramics .ceramic-img,
+main #main-content #ceramics .sculpture-img,
+main #main-content #ceramics .painting-img,
+main #main-content #sculpture .ceramic-img,
+main #main-content #sculpture .sculpture-img,
+main #main-content #sculpture .painting-img,
+main #main-content #paintings .ceramic-img,
+main #main-content #paintings .sculpture-img,
+main #main-content #paintings .painting-img {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main #main-content #ceramics,
+main #main-content #sculpture,
+main #main-content #paintings {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main #main-content #ceramics .ceramic-img,
+main #main-content #ceramics .sculpture-img,
+main #main-content #ceramics .painting-img,
+main #main-content #sculpture .ceramic-img,
+main #main-content #sculpture .sculpture-img,
+main #main-content #sculpture .painting-img,
+main #main-content #paintings .ceramic-img,
+main #main-content #paintings .sculpture-img,
+main #main-content #paintings .painting-img {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
