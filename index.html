@@ -19,7 +19,15 @@
   <body>
     <!--NavBar-->
     <header>
-      <nav class="navbar navbar-expand-lg py-lg-4 navbar-light bg-primary">
+      <nav
+        class="
+          navbar navbar-expand-lg
+          py-lg-4
+          fixed-top
+          navbar-light
+          bg-primary
+        "
+      >
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">
             <img
@@ -62,9 +70,9 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
+                  <li><a class="dropdown-item" href="#Keramik">Keramik</a></li>
                   <li><a class="dropdown-item" href="#">Tavlor</a></li>
                   <li><a class="dropdown-item" href="#">Skulpturer</a></li>
-                  <li><a class="dropdown-item" href="#">Keramik</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -79,7 +87,7 @@
     <!--Content-->
     <main>
       <div id="main-content">
-        <div class="ceramics">
+        <div class="ceramics" id="Keramik">
           <div id="bluesky">
             <img src="assets/ceramics_1.jpg" alt="text" />
             <button
@@ -100,7 +108,7 @@
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="keramik_1Label">Blå himmel</h5>
+                    <h5 class="modal-title" id="keramik_1Label">Vintervik</h5>
                     <button
                       type="button"
                       class="btn-close"
@@ -112,7 +120,7 @@
                     Vikt: 5 kg <br />
                     Dimensioner: 31.5 x 9 x 5.5 cm <br />
                     Artist: Magnus Björklag <br />
-                    Färg: Blå
+                    Färg: Vit
                   </div>
                   <div class="modal-footer">
                     <button
@@ -257,7 +265,6 @@
       </footer>
     </section>
 
-    <<<<<<< HEAD =======
     <div
       class="modal fade"
       id="keramik_1"
@@ -294,7 +301,6 @@
         </div>
       </div>
     </div>
-    >>>>>>> c6c8657cb1e3b185f6d3b4c886dab20104fa9f37
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
