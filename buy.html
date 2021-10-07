@@ -14,69 +14,72 @@
     <title>Document</title>
   </head>
   <body>
-    <section
-      class="
-        orderForm
-        d-inline-flex
-        flex-column
-        justify-content-center
-        align-items-center
-      "
-    >
-      <form class="row g-3">
-        <div class="col-md-6">
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="inputFirstName"
-              placeholder="Erik"
-              required
-            />
-            <label for="inputFirstName" class="form-label">Förnamn</label>
+    <div class="container mt-5">
+      <section
+        class="
+          orderForm
+          d-inline-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        "
+      >
+        <h1>Din order</h1>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="inputFirstName"
+                placeholder="Erik"
+                required
+              />
+              <label for="inputFirstName" class="form-label">Förnamn</label>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="inputSurName"
-              placeholder="Eriksson"
-              required
-            />
-            <label for="inputSurName" class="form-label">Efternamn</label>
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="inputSurName"
+                placeholder="Eriksson"
+                required
+              />
+              <label for="inputSurName" class="form-label">Efternamn</label>
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="Eriksgatan 3"
-              required
-            />
-            <label for="inputAddress" class="form-label">Adress</label>
+          <div class="col-12">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Eriksgatan 3"
+                required
+              />
+              <label for="inputAddress" class="form-label">Adress</label>
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <label for="inputEmail" class="form-label">E-post</label>
-          <input type="email" class="form-control" id="inputEmail" required />
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Stad</label>
-          <input type="text" class="form-control" id="inputCity" required />
-        </div>
-        <div class="col-md-6">
-          <label for="inputZip" class="form-label">Postkod</label>
-          <input type="number" class="form-control" id="inputZip" required />
-        </div>
-        <div class="col-md-6">
-          <button class="btn btn-danger" type="submit">Beställ</button>
-        </div>
-      </form>
-    </section>
+          <div class="col-12">
+            <label for="inputEmail" class="form-label">E-post</label>
+            <input type="email" class="form-control" id="inputEmail" required />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Stad</label>
+            <input type="text" class="form-control" id="inputCity" required />
+          </div>
+          <div class="col-md-6">
+            <label for="inputZip" class="form-label">Postkod</label>
+            <input type="number" class="form-control" id="inputZip" required />
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-dark" type="submit">Beställ</button>
+          </div>
+        </form>
+      </section>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
