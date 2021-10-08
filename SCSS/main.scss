@@ -42,6 +42,145 @@ main {
   }
 }
 
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #111;
+}
+.footer-content {
+    display: flex;
+    .box {
+        flex-basis: 50%;
+        padding: 10px 20px;
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color:darkgrey;
+        }
+        .fcontent {
+            margin: 20px 0 0 0;
+            position: relative;
+            ::before {
+                position: absolute;
+                content: "";
+                top: -10px;
+                height: 2px;
+                width: 100%;
+                background: #1a1a1a;
+                }
+            ::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 15px;
+                background: rgb(108, 194, 224);
+                top: -10px;
+            }
+        }
+    }
+}
+.lefty {
+    .fcontent {
+        p {
+            text-align: justify;
+            color: white;
+        }
+        .media {
+            margin: 20px 0 0 0;
+            a {
+                padding: 0 px;
+                span {
+                    height: 40px;
+                    width: 40px;
+                    background-color: #1a1a1a;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                    :hover {
+                        background-color: rgb(108, 194, 224);
+                    }
+                }
+            }
+        }
+    }
+}
+.centery {
+    .fcontent {
+        .fas {
+            font-size: 1.4375rem;
+            background-color: #1a1a1a;
+            height: 45px;
+            width: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50%;
+            transition: 0.3s;
+            cursor: pointer;
+            :hover {
+                background-color: rgb(108, 194, 224);
+            }
+        }
+        .text {
+            font-size: 1.0625rem;
+            font-weight: 500;
+            padding-left: 10px;
+            color:white;
+        }
+        .telefon {
+            margin: 15px 0;
+        }
+    }
+}
+.righty {
+    form {
+        .text {
+            font-size: 1.0625rem;
+            margin-bottom: 2px;
+            color: white;
+        }
+        .msg {
+            margin-top: 10px;
+        }
+        input,
+        .msgForm {
+            width: 100%;
+            font-size: 1.0625rem;
+            background-color: #151515;
+            padding-left: 10px;
+            border: 1px solid #222222;
+            :focus {
+                outline-color: #3498db;
+            }
+        }
+        input {
+            height: 35px;
+        }
+        .btn {
+            margin-top: 10px;
+            button {
+                height: 40px;
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: rgb(108, 194, 224);
+                font-size: 1.0625rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: .3s;
+                :hover {
+                    background-color: rgb(108, 194, 224);
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (min-width: 768px) {
   main {
     #main-content {
