@@ -99,9 +99,58 @@
             </div>
           </div>
           <div class="col-md-6">
-            <button class="btn btn-dark" type="submit">Beställ</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#confirmModal"
+            >
+              Beställ
+            </button>
           </div>
         </form>
+        <div
+          class="modal fade"
+          id="confirmModal"
+          tabindex="-1"
+          aria-labelledby="confirmModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">
+                  Tack för din order!
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>Ordernummer: 68246045</p>
+                <p>Din order skickas från vårt lager inom 2-4 vardagar.</p>
+                <p>
+                  Har du frågor om din order, vänligen kontakta oss via mail
+                  eller telefon. Uppgifterna hittar du under "Kontakt" på vår
+                  hemsida.
+                </p>
+                <p>Välkommen åter!</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Stäng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <script
