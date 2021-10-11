@@ -59,6 +59,10 @@ footer {
   bottom: 0px;
   width: 100%;
   background-color: #111;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
 
 .footer-content {
@@ -78,7 +82,7 @@ footer {
   margin: 20px 0 0 0;
   position: relative;
 }
-.footer-content .box .fcontent ::before {
+.footer-content .box .fcontent:before {
   position: absolute;
   content: "";
   top: -10px;
@@ -86,11 +90,11 @@ footer {
   width: 100%;
   background: #1a1a1a;
 }
-.footer-content .box .fcontent ::after {
+.footer-content .box .fcontent:after {
   position: absolute;
   content: "";
   height: 2px;
-  width: 15px;
+  width: 65px;
   background: #6cc2e0;
   top: -10px;
 }
@@ -104,6 +108,9 @@ footer {
 }
 .lefty .fcontent .media a {
   padding: 0px;
+  color: white;
+  height: 40px;
+  width: 40px;
 }
 .lefty .fcontent .media a span {
   height: 40px;
@@ -111,26 +118,26 @@ footer {
   background-color: #1a1a1a;
   line-height: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 30px;
   border-radius: 5px;
   transition: 0.3s;
 }
-.lefty .fcontent .media a span :hover {
+.lefty .fcontent .media a span:hover {
   background-color: #6cc2e0;
 }
 
-.centery .fcontent .fas {
-  font-size: 1.4375rem;
+.centery .fcontent .bi {
+  font-size: 1.6375rem;
   background-color: #1a1a1a;
-  height: 45px;
-  width: 45px;
+  height: 65px;
+  width: 65px;
   line-height: 45px;
   text-align: center;
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
 }
-.centery .fcontent .fas :hover {
+.centery .fcontent .bi:hover {
   background-color: #6cc2e0;
 }
 .centery .fcontent .text {
@@ -150,17 +157,20 @@ footer {
 }
 .righty form .msg {
   margin-top: 10px;
+  color: #222222;
 }
 .righty form input,
+.righty form textarea,
 .righty form .msgForm {
   width: 100%;
   font-size: 1.0625rem;
-  background-color: #151515;
+  background-color: #222222;
   padding-left: 10px;
-  border: 1px solid #222222;
+  border: 1px solid white;
 }
-.righty form input :focus,
-.righty form .msgForm :focus {
+.righty form input:focus,
+.righty form textarea:focus,
+.righty form .msgForm:focus {
   outline-color: #3498db;
 }
 .righty form input {
@@ -174,14 +184,15 @@ footer {
   width: 100%;
   border: none;
   outline: none;
-  background-color: #6cc2e0;
+  background-color: #6cc1e0;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 7.5px;
 }
-.righty form .btn button :hover {
-  background-color: #6cc2e0;
+.righty form .btn button:hover {
+  background-color: rgba(24, 233, 42, 0.89);
 }
 
 @media screen and (min-width: 768px) {
@@ -220,6 +231,19 @@ main #main-content #paintings .ceramic-img,
 main #main-content #paintings .sculpture-img,
 main #main-content #paintings .painting-img {
     width: 25%;
+  }
+}
+@media screen and (max-width: 900px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  footer .footer-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer .footer-content .box {
+    margin: 5px 0;
   }
 }
 
