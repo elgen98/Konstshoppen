@@ -18,26 +18,27 @@
     <title>Checkout</title>
   </head>
   <body>
-    <div
-      class="
-        container
-        d-flex
-        flex-column
-        justify-content-center
-        align-items-center
-      "
-    >
-      <h1 class="display-4">Checkout</h1>
-      <div class="img-container w-50">
-        <img
-          class="img-thumbnail"
-          src="assets/ceramics_6.jpg"
-          alt="Vald
-      produkt"
-        />
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img
+            src="assets/skulptur1.jpg"
+            class="rounded img-fluid mt-3 mb-5"
+            alt="Vald produkt"
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="h4 pt-3">Sammanfattning order:</p>
+          <p class="h6 pt-2">Titel: Söndagsångest</p>
+          <p class="h6">Vikt: 6 kg Dimensioner: 31.5 x 9 x 5.5 cm</p>
+          <p class="h6">Färg: Mörkgrön</p>
+          <p class="h6">Artist: Manny Cajun</p>
+          <p class="h6 pb-4">Totalt belopp (inkl. frakt): 5500 kr</p>
+        </div>
       </div>
+
       <section class="orderForm">
-        <form class="row g-3">
+        <form class="row g-3 needs-validation" novalidate>
           <div class="col-md-6">
             <div class="form-floating">
               <input
@@ -47,6 +48,7 @@
                 placeholder="Erik"
                 required
               />
+              <div class="valid-feedback">Looks good!</div>
               <label for="inputFirstName" class="form-label">Förnamn</label>
             </div>
           </div>
@@ -59,6 +61,7 @@
                 placeholder="Eriksson"
                 required
               />
+              <div class="valid-feedback">Looks good!</div>
               <label for="inputSurName" class="form-label">Efternamn</label>
             </div>
           </div>
@@ -71,6 +74,7 @@
                 placeholder="Eriksgatan 3"
                 required
               />
+              <div class="valid-feedback">Looks good!</div>
               <label for="inputAddress" class="form-label">Adress</label>
             </div>
           </div>
@@ -83,6 +87,7 @@
                 placeholder="name@mail.com"
                 required
               />
+              <div class="valid-feedback">Looks good!</div>
               <label for="inputEmail" class="form-label">E-post</label>
             </div>
           </div>
@@ -95,6 +100,7 @@
                 placeholder="Stockholm"
                 required
               />
+              <div class="valid-feedback">Looks good!</div>
               <label for="inputCity" class="form-label">Stad</label>
             </div>
           </div>
@@ -107,6 +113,7 @@
                 placeholder="166 76"
                 required
               />
+              <div class="valid-feedback">Looks good!</div>
               <label for="inputZip" class="form-label">Postkod</label>
             </div>
           </div>
@@ -116,6 +123,7 @@
               class="btn btn-success"
               data-bs-toggle="modal"
               data-bs-target="#confirmModal"
+              required
             >
               Beställ
             </button>
@@ -173,6 +181,7 @@
         </div>
       </section>
     </div>
+    <script src="C:\Users\Lisa\Desktop\grupparbete\konstshoppen\Konstshoppen\js\index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
