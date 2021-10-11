@@ -48,7 +48,8 @@
                 placeholder="Erik"
                 required
               />
-              <div class="valid-feedback">Looks good!</div>
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Fyll i ditt förnamn</div>
               <label for="inputFirstName" class="form-label">Förnamn</label>
             </div>
           </div>
@@ -61,7 +62,8 @@
                 placeholder="Eriksson"
                 required
               />
-              <div class="valid-feedback">Looks good!</div>
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Fyll i ditt efternamn</div>
               <label for="inputSurName" class="form-label">Efternamn</label>
             </div>
           </div>
@@ -74,7 +76,8 @@
                 placeholder="Eriksgatan 3"
                 required
               />
-              <div class="valid-feedback">Looks good!</div>
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Fyll i din adress</div>
               <label for="inputAddress" class="form-label">Adress</label>
             </div>
           </div>
@@ -87,6 +90,8 @@
                 placeholder="Stockholm"
                 required
               />
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Fyll i stad</div>
               <label for="inputCity" class="form-label">Stad</label>
             </div>
           </div>
@@ -99,6 +104,8 @@
                 placeholder="166 76"
                 required
               />
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Fyll i postnummer</div>
               <label for="inputZip" class="form-label">Postkod</label>
             </div>
           </div>
@@ -111,6 +118,8 @@
                 placeholder="name@mail.com"
                 required
               />
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Fyll i din e-post</div>
               <label for="inputEmail" class="form-label">E-post</label>
             </div>
           </div>
@@ -123,6 +132,8 @@
                 placeholder="070-XXXXXXX"
                 required
               />
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Fyll i ditt telefonnummer</div>
               <label for="inputPhoneNumber" class="form-label">Telefon</label>
             </div>
           </div>
@@ -132,6 +143,7 @@
               class="form-control"
               id="inputCardNumber"
               placeholder="Kortnummer"
+              required
             />
           </div>
           <div class="col-md-2 col-sm-6">
@@ -140,6 +152,7 @@
               class="form-control"
               id="inputCVC"
               placeholder="CVC"
+              required
             />
           </div>
           <div class="col-md-2 col-sm-6">
@@ -148,6 +161,7 @@
               class="form-control"
               id="inputDate"
               placeholder="MM/ÅÅ"
+              required
             />
           </div>
           <div class="form-check">
@@ -156,6 +170,7 @@
               type="checkbox"
               value=""
               id="flexCheckDefault"
+              required
             />
             <label class="form-check-label" for="flexCheckDefault">
               Jag accepterar Konstshoppens villkor och policy
@@ -173,68 +188,75 @@
               och erbjudanden
             </label>
           </div>
-          <div class="col-md-6">
-            <button
-              type="button"
-              class="btn btn-success"
-              data-bs-toggle="modal"
-              data-bs-target="#confirmModal"
-              required
-            >
-              Beställ
-            </button>
-          </div>
-        </form>
-        <div
-          class="modal fade"
-          id="confirmModal"
-          tabindex="-1"
-          aria-labelledby="confirmModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="confirmModalLabel">
-                  Tack för din order!
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div
-                class="
-                  modal-body
-                  d-flex
-                  flex-column
-                  align-items-center
-                  justify-content-center
-                "
+          <div class="row">
+            <div class="col-md-6">
+              <button class="btn btn-dark mt-5 mb-5" type="submit">
+                Registrera uppgifter
+              </button>
+            </div>
+
+            <div class="col-md-6">
+              <button
+                type="button"
+                class="btn btn-dark mt-5 mb-5"
+                data-bs-toggle="modal"
+                data-bs-target="#confirmModal"
               >
-                <i
-                  class="bi bi-check-lg text-success"
-                  style="font-size: 2.5rem"
-                ></i>
-                <p>Ordernummer: 68246045</p>
-                <p>Din order skickas från vårt lager inom 2-4 vardagar.</p>
-                <p>
-                  Har du frågor om din order, vänligen kontakta oss via mail
-                  eller telefon. Uppgifterna hittar du under "Kontakt" på vår
-                  hemsida.
-                </p>
-                <p>Välkommen åter!</p>
-              </div>
-              <div class="modal-footer">
-                <a href="index.html" class="btn btn-secondary"
-                  >Tillbaka till startsidan</a
-                >
+                Beställ
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="confirmModal"
+              tabindex="-1"
+              aria-labelledby="confirmModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">
+                      Tack för din order!
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="
+                      modal-body
+                      d-flex
+                      flex-column
+                      align-items-center
+                      justify-content-center
+                    "
+                  >
+                    <i
+                      class="bi bi-check-lg text-success"
+                      style="font-size: 2.5rem"
+                    ></i>
+                    <p>Ordernummer: 68246045</p>
+                    <p>Din order skickas från vårt lager inom 2-4 vardagar.</p>
+                    <p>
+                      Har du frågor om din order, vänligen kontakta oss via mail
+                      eller telefon. Uppgifterna hittar du under "Kontakt" på
+                      vår hemsida.
+                    </p>
+                    <p>Välkommen åter!</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="index.html" class="btn btn-secondary"
+                      >Tillbaka till startsidan</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </section>
     </div>
     <script src="C:\Users\Lisa\Desktop\grupparbete\konstshoppen\Konstshoppen\js\index.js"></script>
