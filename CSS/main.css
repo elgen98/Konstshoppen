@@ -250,8 +250,8 @@ footer {
     width: 50%;
   }
   .hero-image .carousel {
-    width: 700px;
-    height: 600px;
+    width: 500px;
+    height: 200px;
   }
   .hero-image .carousel .carousel > img,
 .hero-image .carousel .carousel-inner {
@@ -283,7 +283,7 @@ main #main-content #paintings .painting-img {
   }
   .hero-image .carousel {
     width: 700px;
-    height: 600px;
+    height: 400px;
   }
   .hero-image .carousel .carousel > img,
 .hero-image .carousel .carousel-inner {
