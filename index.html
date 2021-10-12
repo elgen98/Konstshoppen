@@ -72,16 +72,18 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item" href="#ceramics">Keramik</a>
+                    <a class="dropdown-item" href="#main-content">Keramik</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#sculpture">Skulpturer</a>
+                    <a class="dropdown-item" href="#sculptureNav">Skulpturer</a>
                   </li>
-                  <li><a class="dropdown-item" href="#paintings">Tavlor</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#paintingNav">Tavlor</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#sfooter">Om oss</a>
+                <a class="nav-link text-light" href="#footerNav">Om oss</a>
               </li>
             </ul>
           </div>
@@ -183,7 +185,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <a href="#ceramics" class="arrowLinks"
+      <a href="#main-content" class="arrowLinks"
         ><i class="bi bi-arrow-down-circle-fill"></i
       ></a>
     </div>
@@ -191,7 +193,7 @@
     <!--Content-->
     <main>
       <div id="main-content">
-        <h3>Keramik</h3>
+        <h3 id="ceramicNav">Keramik</h3>
         <div id="ceramics">
           <div class="ceramic-img">
             <img src="assets/ceramics_1.jpg" alt="Vintervik" />
@@ -519,6 +521,7 @@
             </div>
           </div>
         </div>
+        <span id="sculptureNav"></span>
         <h3>Skulpturer</h3>
         <div id="sculpture">
           <div class="sculpture-img">
@@ -850,7 +853,7 @@
             </div>
           </div>
         </div>
-
+        <span id="paintingNav"></span>
         <h3>Tavlor</h3>
         <div id="paintings">
           <div class="painting-img">
@@ -1173,11 +1176,13 @@
               </div>
             </div>
           </div>
+          <span id="footerNav"></span>
         </div>
       </div>
     </main>
 
     <!--Footer-->
+
     <section id="sfooter">
       <footer>
         <div class="footer-content">
