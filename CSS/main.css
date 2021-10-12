@@ -1,12 +1,12 @@
 body {
   font-family: century gothic;
   height: 100%;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Shara-Hughes_Wil-Driscoll_lo-res_13-1200x0-c-default.jpg);
-  height: 96vh;
+  height: 95vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,7 @@ footer {
   margin: 20px 0 0 0;
   position: relative;
 }
-.footer-content .box .fcontent:before {
+.footer-content .box .fcontent::before {
   position: absolute;
   content: "";
   top: -10px;
@@ -120,7 +120,7 @@ footer {
   width: 100%;
   background: #1a1a1a;
 }
-.footer-content .box .fcontent:after {
+.footer-content .box .fcontent::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -132,7 +132,7 @@ footer {
   margin: 20px 0 0 0;
   position: relative;
 }
-.footer-content .fcontent ::before {
+.footer-content .fcontent::before {
   position: absolute;
   content: "";
   top: -10px;
@@ -140,7 +140,7 @@ footer {
   width: 100%;
   background: #1a1a1a;
 }
-.footer-content .fcontent ::after {
+.footer-content .fcontent::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -207,7 +207,7 @@ footer {
 }
 .righty form .msg {
   margin-top: 10px;
-  color: #222222;
+  color: white;
 }
 .righty form input,
 .righty form textarea,
@@ -223,8 +223,10 @@ footer {
 .righty form .msgForm:focus {
   outline-color: #3498db;
 }
+.righty form textarea,
 .righty form input {
   height: 35px;
+  color: white;
 }
 .righty form .btn {
   margin-top: 10px;
