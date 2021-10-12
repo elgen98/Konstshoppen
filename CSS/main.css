@@ -132,7 +132,7 @@ footer {
   margin: 20px 0 0 0;
   position: relative;
 }
-.footer-content .fcontent ::before {
+.footer-content .fcontent::before {
   position: absolute;
   content: "";
   top: -10px;
@@ -140,7 +140,7 @@ footer {
   width: 100%;
   background: #1a1a1a;
 }
-.footer-content .fcontent ::after {
+.footer-content .fcontent::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -207,7 +207,7 @@ footer {
 }
 .righty form .msg {
   margin-top: 10px;
-  color: #222222;
+  color: white;
 }
 .righty form input,
 .righty form textarea,
@@ -223,8 +223,10 @@ footer {
 .righty form .msgForm:focus {
   outline-color: #3498db;
 }
+.righty form textarea,
 .righty form input {
   height: 35px;
+  color: white;
 }
 .righty form .btn {
   margin-top: 10px;
