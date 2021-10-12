@@ -128,6 +128,26 @@ footer {
   background: #6cc2e0;
   top: -10px;
 }
+.footer-content .fcontent {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.footer-content .fcontent ::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.footer-content .fcontent ::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: #6cc2e0;
+  top: -10px;
+}
 
 .lefty .fcontent p {
   text-align: justify;
