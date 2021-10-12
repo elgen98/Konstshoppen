@@ -2,9 +2,44 @@ $img-shadow: 0 2px 3px 0 rgba(179, 179, 185, 0.555),
   0 4px 10px 0 rgba(161, 161, 167, 0.562);
 
 body {
-  padding-top: 20vh;
   font-family: century gothic;
+  height: 100%;
+  margin-top: 60px;
 }
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/Shara-Hughes_Wil-Driscoll_lo-res_13-1200x0-c-default.jpg);
+
+  height: 96vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  #carouselExampleCaptions {
+    width: 75%;
+  }
+
+  .carousel {
+    width: 300px;
+    height: 200px;
+    .carousel > img,
+    .carousel-inner,
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .hero-text {
+    text-align: center;
+    color: white;
+  }
+  .arrowLinks {
+    color: black;
+  }
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -42,16 +77,15 @@ main {
   }
 }
 
-
 footer {
     position: relative;
     bottom: 0px;
     width: 100%;
     background-color: #111;
     margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: white;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
 }
 .footer-content {
     display: flex;
@@ -85,6 +119,27 @@ footer {
             }
         }
     }
+    .fcontent {
+      margin: 20px 0 0 0;
+      position: relative;
+      ::before {
+        position: absolute;
+        content: "";
+        top: -10px;
+        height: 2px;
+        width: 100%;
+        background: #1a1a1a;
+      }
+      ::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 15px;
+        background: rgb(108, 194, 224);
+        top: -10px;
+      }
+    }
+  }
 }
 .lefty {
     .fcontent {
@@ -114,8 +169,11 @@ footer {
                 }
             }
         }
+      }
     }
+  }
 }
+
 .centery {
     .fcontent {
         .bi {
@@ -142,6 +200,7 @@ footer {
             margin: 15px 0;
         }
     }
+  }
 }
 .righty {
     form {
@@ -187,11 +246,26 @@ footer {
                 }
             }
         }
+      }
     }
+  }
 }
 
-
 @media screen and (min-width: 768px) {
+  .hero-image {
+    #carouselExampleCaptions {
+      width: 50%;
+    }
+    .carousel {
+      width: 700px;
+      height: 600px;
+      .carousel > img,
+      .carousel-inner {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
   main {
     #main-content {
       #ceramics,
@@ -210,6 +284,20 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+  .hero-image {
+    #carouselExampleCaptions {
+      width: 50%;
+    }
+    .carousel {
+      width: 700px;
+      height: 600px;
+      .carousel > img,
+      .carousel-inner {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
   main {
     #main-content {
       #ceramics,
