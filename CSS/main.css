@@ -66,6 +66,16 @@ h3 {
   margin-top: 600px;
   font-size: 30px;
 }
+.tack-content .klicka-har button {
+  border: 1px solid white;
+  background-color: white;
+}
+.tack-content .klicka-har button:hover {
+  color: green;
+  transition: ease-in-out 0.3s;
+  font-size: 35px;
+}
+
 main {
   display: flex;
   justify-content: center;

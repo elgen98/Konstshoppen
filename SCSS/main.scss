@@ -54,9 +54,6 @@ h3 {
     font-size: 100px;
     margin-top: 235px;
     margin-left: 0 auto;
-    .bi {
-      
-    }
   }
   .tack-order {
     font-size: 70px;
@@ -73,11 +70,18 @@ h3 {
     position: absolute;
     margin-top: 600px;
     font-size: 30px;
-    .button {
-      
+    button {
+      border: 1px solid white;
+      background-color: white;
+      &:hover {
+        color: green;
+        transition: ease-in-out 0.3s;
+        font-size: 35px;
+      }
+    }
     }
   }
-}
+
 
 main {
   display: flex;
