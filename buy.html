@@ -72,7 +72,11 @@
                     justify-content-center
                   "
                 >
-                  <form class="row g-3 needs-validation" novalidate>
+                  <form
+                    class="row g-3 needs-validation"
+                    novalidate
+                    action="tack.html"
+                  >
                     <div class="col-md-6">
                       <label for="inputFirstName"></label>
                       <input
@@ -142,7 +146,7 @@
                     <div class="col-md-12">
                       <label for="inputPhone"></label>
                       <input
-                        type="text"
+                        type="number"
                         class="form-control"
                         id="inputPhone"
                         placeholder="070-XXXXXXX"
@@ -150,10 +154,10 @@
                       />
                       <div class="invalid-feedback">Fyll i telefonnummer</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12">
                       <label for="inputCardnr"></label>
                       <input
-                        type="text"
+                        type="number"
                         class="form-control"
                         id="inputCardnr"
                         placeholder="Kortnummer"
@@ -164,13 +168,23 @@
                     <div class="col-md-6">
                       <label for="inputCVC"></label>
                       <input
-                        type="text"
+                        type="number"
                         class="form-control"
                         id="inputCVC"
-                        placeholder="MM/ÅÅ"
+                        placeholder="CVC"
                         required
                       />
                       <div class="invalid-feedback">Fyll i CVC</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputDate"></label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="inputDate"
+                        placeholder="ÅÅ/MM"
+                        required
+                      />
                     </div>
                     <div class="form-check">
                       <input
@@ -197,10 +211,7 @@
                       </label>
                     </div>
 
-                    <button
-                      type="submit"
-                      class="btn btn-primary col-md-2 href=tack.html"
-                    >
+                    <button type="submit" class="btn btn-primary col-md-2">
                       Beställ
                     </button>
                   </form>
