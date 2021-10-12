@@ -8,6 +8,41 @@ h3 {
   margin-top: 50px;
 }
 
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  10% {
+    color: blue;
+  }
+  20% {
+    color: greenyellow;
+  }
+  30% {
+    color: orange;
+  }
+  40% {
+    color: pink;
+  }
+  50% {
+    color: purple;
+  }
+  60% {
+    color: brown;
+  }
+  70% {
+    color: orange;
+  }
+  80% {
+    color: mediumspringgreen;
+  }
+  90% {
+    color: gold;
+  }
+  100% {
+    color: red;
+  }
+}
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Shara-Hughes_Wil-Driscoll_lo-res_13-1200x0-c-default.jpg);
   height: 95vh;
@@ -34,8 +69,12 @@ h3 {
   color: white;
 }
 .hero-image .hero-text h1 {
+  display: inline;
   font-size: 3rem;
   font-family: "Blackadder ITC";
+}
+.hero-image .hero-text .color {
+  animation: rainbow 5s linear infinite;
 }
 .hero-image .arrowLinks {
   color: black;
