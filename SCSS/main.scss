@@ -4,13 +4,13 @@ $img-shadow: 0 2px 3px 0 rgba(179, 179, 185, 0.555),
 body {
   font-family: century gothic;
   height: 100%;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/Shara-Hughes_Wil-Driscoll_lo-res_13-1200x0-c-default.jpg);
 
-  height: 96vh;
+  height: 95vh;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -78,51 +78,30 @@ main {
 }
 
 footer {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    background-color: #111;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
 .footer-content {
-    display: flex;
-    .box {
-        flex-basis: 50%;
-        padding: 10px 20px;
-        h2 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            color:darkgrey;
-        }
-        .fcontent {
-            margin: 20px 0 0 0;
-            position: relative;
-          &:before {
-                position: absolute;
-                content: "";
-                top: -10px;
-                height: 2px;
-                width: 100%;
-                background: #1a1a1a;
-                }
-          &:after {
-                position: absolute;
-                content: "";
-                height: 2px;
-                width: 65px;
-                background: rgb(108, 194, 224);
-                top: -10px;
-            }
-        }
+  display: flex;
+  .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: darkgrey;
     }
     .fcontent {
       margin: 20px 0 0 0;
       position: relative;
-      ::before {
+      &:before {
         position: absolute;
         content: "";
         top: -10px;
@@ -130,126 +109,143 @@ footer {
         width: 100%;
         background: #1a1a1a;
       }
-      ::after {
+      &:after {
         position: absolute;
         content: "";
         height: 2px;
-        width: 15px;
+        width: 65px;
         background: rgb(108, 194, 224);
         top: -10px;
       }
     }
   }
-
-.lefty {
-    .fcontent {
-        p {
-            text-align: justify;
-            color: white;
-        }
-        .media {
-            margin: 20px 0 0 0;
-            a {
-                padding: 0px;
-                color: white;
-                height: 40px;
-                width: 40px;
-                span {
-                    height: 40px;
-                    width: 40px;
-                    background-color: #1a1a1a;
-                    line-height: 40px;
-                    text-align: center;
-                    font-size: 30px;
-                    border-radius: 5px;
-                    transition: 0.3s;
-                    &:hover {
-                        background-color: rgb(108, 194, 224);
-                    }
-                }
-            }
-        }
-      }
+  .fcontent {
+    margin: 20px 0 0 0;
+    position: relative;
+    ::before {
+      position: absolute;
+      content: "";
+      top: -10px;
+      height: 2px;
+      width: 100%;
+      background: #1a1a1a;
     }
-  
-
-
-.centery {
-    .fcontent {
-        .bi {
-            font-size: 1.6375rem;
-            background-color: #1a1a1a;
-            height: 65px;
-            width: 65px;
-            line-height: 45px;
-            text-align: center;
-            border-radius: 50%;
-            transition: 0.3s;
-            cursor: pointer;
-            &:hover {
-                background-color: rgb(108, 194, 224);
-            }
-        }
-        .text {
-            font-size: 1.0625rem;
-            font-weight: 500;
-            padding-left: 10px;
-            color:white;
-        }
-        .telefon {
-            margin: 15px 0;
-        }
+    ::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: rgb(108, 194, 224);
+      top: -10px;
     }
   }
+}
 
-.righty {
-    form {
-        .text {
-            font-size: 1.0625rem;
-            margin-bottom: 2px;
-            color: white;
-        }
-        .msg {
-            margin-top: 10px;
-            color: #222222;
-        }
-        input,
-        textarea,
-        .msgForm {
-            width: 100%;
-            font-size: 1.0625rem;
-            background-color: #222222;
-            padding-left: 10px;
-            border: 1px solid white;
-            &:focus {
-                outline-color: #3498db;
-            }
-        }
-        input {
-            height: 35px;
-        }
-        .btn {
-            margin-top: 10px;
-            button {
-                height: 40px;
-                width: 100%;
-                border: none;
-                outline: none;
-                background-color: rgb(108, 193, 224);
-                font-size: 1.0625rem;
-                font-weight: 500;
-                cursor: pointer;
-                transition: .3s;
-                border-radius: 7.5px;
-                &:hover {
-                    background-color: rgba(24, 233, 42, 0.89);
-                }
-            }
+.lefty {
+  .fcontent {
+    p {
+      text-align: justify;
+      color: white;
+    }
+    .media {
+      margin: 20px 0 0 0;
+      a {
+        padding: 0px;
+        color: white;
+        height: 40px;
+        width: 40px;
+        span {
+          height: 40px;
+          width: 40px;
+          background-color: #1a1a1a;
+          line-height: 40px;
+          text-align: center;
+          font-size: 30px;
+          border-radius: 5px;
+          transition: 0.3s;
+          &:hover {
+            background-color: rgb(108, 194, 224);
+          }
         }
       }
     }
-  
+  }
+}
 
+.centery {
+  .fcontent {
+    .bi {
+      font-size: 1.6375rem;
+      background-color: #1a1a1a;
+      height: 65px;
+      width: 65px;
+      line-height: 45px;
+      text-align: center;
+      border-radius: 50%;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(108, 194, 224);
+      }
+    }
+    .text {
+      font-size: 1.0625rem;
+      font-weight: 500;
+      padding-left: 10px;
+      color: white;
+    }
+    .telefon {
+      margin: 15px 0;
+    }
+  }
+}
+
+.righty {
+  form {
+    .text {
+      font-size: 1.0625rem;
+      margin-bottom: 2px;
+      color: white;
+    }
+    .msg {
+      margin-top: 10px;
+      color: #222222;
+    }
+    input,
+    textarea,
+    .msgForm {
+      width: 100%;
+      font-size: 1.0625rem;
+      background-color: #222222;
+      padding-left: 10px;
+      border: 1px solid white;
+      &:focus {
+        outline-color: #3498db;
+      }
+    }
+    input {
+      height: 35px;
+    }
+    .btn {
+      margin-top: 10px;
+      button {
+        height: 40px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: rgb(108, 193, 224);
+        font-size: 1.0625rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 7.5px;
+        &:hover {
+          background-color: rgba(24, 233, 42, 0.89);
+        }
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero-image {
