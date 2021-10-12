@@ -122,7 +122,7 @@ footer {
   .fcontent {
     margin: 20px 0 0 0;
     position: relative;
-    ::before {
+    &::before {
       position: absolute;
       content: "";
       top: -10px;
@@ -130,7 +130,7 @@ footer {
       width: 100%;
       background: #1a1a1a;
     }
-    ::after {
+    &::after {
       position: absolute;
       content: "";
       height: 2px;
