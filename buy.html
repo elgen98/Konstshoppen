@@ -42,7 +42,7 @@
               data-bs-toggle="modal"
               data-bs-target="#confirmModal"
             >
-              Beställ
+              Gå till checkout
             </button>
           </div>
           <div
@@ -55,7 +55,7 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="confirmModalLabel">Uppgifter</h5>
+                  <h5 class="modal-title" id="confirmModalLabel">Checkout</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -63,158 +63,164 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div
-                  class="
-                    modal-body
-                    d-flex
-                    flex-column
-                    align-items-center
-                    justify-content-center
-                  "
-                >
-                  <form
-                    class="row g-3 needs-validation"
-                    novalidate
-                    action="tack.html"
+                <div class="container">
+                  <div
+                    class="
+                      modal-body
+                      d-flex
+                      flex-column
+                      align-items-center
+                      justify-content-center
+                    "
                   >
-                    <div class="col-md-6">
-                      <label for="inputFirstName"></label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputFirstName"
-                        placeholder="Förnamn"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i ditt förnamn</div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputLastName"></label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputLastName"
-                        placeholder="Efternamn"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i fitt efternamn</div>
-                    </div>
-                    <div class="col-md-12">
-                      <label for="inputAdress"></label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputAdress"
-                        placeholder="Adress"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i adress</div>
-                    </div>
-                    <div class="col-md-12">
-                      <label for="inputZip"></label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="inputZip"
-                        placeholder="Postnummer"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i postnummer</div>
-                    </div>
-                    <div class="col-md-12">
-                      <label for="inputCity"></label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputCity"
-                        placeholder="Stad"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i stad</div>
-                    </div>
-                    <div class="col-md-12">
-                      <label for="inputEmail"></label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputEmail"
-                        placeholder="E-post"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i e-post</div>
-                    </div>
-                    <div class="col-md-12">
-                      <label for="inputPhone"></label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="inputPhone"
-                        placeholder="070-XXXXXXX"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i telefonnummer</div>
-                    </div>
-                    <div class="col-12">
-                      <label for="inputCardnr"></label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="inputCardnr"
-                        placeholder="Kortnummer"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i kortnummer</div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputCVC"></label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="inputCVC"
-                        placeholder="CVC"
-                        required
-                      />
-                      <div class="invalid-feedback">Fyll i CVC</div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputDate"></label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="inputDate"
-                        placeholder="ÅÅ/MM"
-                        required
-                      />
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                        required
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Jag accepterar Konstshoppens villkor och policy
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Jag vill prenumerera till Konstshoppens e-post lista för
-                        nyheter och erbjudanden
-                      </label>
-                    </div>
+                    <form
+                      class="row g-3 needs-validation"
+                      novalidate
+                      action="tack.html"
+                    >
+                      <div class="col-md-6">
+                        <label for="inputFirstName"></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputFirstName"
+                          placeholder="Förnamn"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i ditt förnamn</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputLastName"></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputLastName"
+                          placeholder="Efternamn"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Fyll i ditt efternamn
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputAdress"></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputAdress"
+                          placeholder="Adress"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i adress</div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputZip"></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputZip"
+                          placeholder="Postnummer"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i postnummer</div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputCity"></label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="inputCity"
+                          placeholder="Stad"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i stad</div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputEmail"></label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="inputEmail"
+                          placeholder="E-post"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i e-post</div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputPhone"></label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="inputPhone"
+                          placeholder="070-XXXXXXX"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i telefonnummer</div>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputCardnr"></label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="inputCardnr"
+                          placeholder="Kortnummer"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i kortnummer</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCVC"></label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="inputCVC"
+                          placeholder="CVC"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i CVC</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputDate"></label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="inputDate"
+                          placeholder="ÅÅ/MM"
+                          required
+                        />
+                        <div class="invalid-feedback">Fyll i datum</div>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                          required
+                        />
 
-                    <button type="submit" class="btn btn-primary col-md-2">
-                      Beställ
-                    </button>
-                  </form>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Jag accepterar Konstshoppens villkor och policy
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Jag vill prenumerera till Konstshoppens e-post lista
+                          för nyheter och erbjudanden
+                        </label>
+                      </div>
+
+                      <button type="submit" class="btn btn-success col-md-12">
+                        Beställ
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
