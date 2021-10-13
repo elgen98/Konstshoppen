@@ -89,37 +89,38 @@ h3 {
 .tack-content {
   display: flex;
   justify-content: center;
-  height: 730px;
+  height: 765px;
   width: 100%;
   position: relative;
   .checkmark {
     color: green;
-    font-size: 100px;
+    font-size: 85px;
     margin-top: 235px;
     margin-left: 0 auto;
   }
   .tack-order {
-    font-size: 70px;
-    margin-top: 100px;
+    font-size: 37.5px;
+    margin-top: 165px;
     position: absolute;
   }
   .order-text {
     position: absolute;
-    margin-top: 400px;
-    font-size: 17.5px;
+    margin-top: 375px;
+    font-size: 20px;
     text-align: center;
+    line-height: 1.5;
   }
   .klicka-har {
     position: absolute;
-    margin-top: 600px;
-    font-size: 30px;
+    margin-top: 650px;
+    font-size: 20px;
     button {
       border: 1px solid white;
       background-color: white;
       &:hover {
         color: green;
         transition: ease-in-out 0.3s;
-        font-size: 35px;
+        font-size: 25px;
       }
     }
   }
@@ -367,7 +368,42 @@ footer {
       }
     }
   }
+
+  .tack-content {
+    height: 730px;
+    width: 100%;
+    position: relative;
+    .checkmark {
+      font-size: 100px;
+      margin-top: 235px;
+      margin-left: 0 auto;
+    }
+    .tack-order {
+      font-size: 70px;
+      margin-top: 100px;
+      position: absolute;
+    }
+    .order-text {
+      position: absolute;
+      margin-top: 400px;
+      font-size: 17.5px;
+      text-align: center;
+    }
+    .klicka-har {
+      position: absolute;
+      margin-top: 600px;
+      font-size: 30px;
+      button {
+        border: 1px solid white;
+        background-color: white;
+        &:hover {
+          font-size: 35px;
+        }
+      }
+    }
+  }
 }
+
 
 @media screen and (min-width: 992px) {
   .hero-image {
