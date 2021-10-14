@@ -7,7 +7,7 @@ body {
 }
 body,
 h3 {
-  margin-top: 50px;
+  margin-top: 6vh;
 }
 @keyframes rainbow {
   0% {
@@ -48,7 +48,7 @@ h3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/Shara-Hughes_Wil-Driscoll_lo-res_13-1200x0-c-default.jpg);
 
-  height: 95vh;
+  height: 94vh;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -82,6 +82,7 @@ h3 {
     }
   }
   .arrowLinks {
+    margin-top: 50px;
     color: black;
   }
 }
@@ -403,7 +404,6 @@ footer {
     }
   }
 }
-
 
 @media screen and (min-width: 992px) {
   .hero-image {

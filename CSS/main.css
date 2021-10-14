@@ -5,7 +5,7 @@ body {
 
 body,
 h3 {
-  margin-top: 50px;
+  margin-top: 6vh;
 }
 
 @keyframes rainbow {
@@ -45,7 +45,7 @@ h3 {
 }
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Shara-Hughes_Wil-Driscoll_lo-res_13-1200x0-c-default.jpg);
-  height: 95vh;
+  height: 94vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,6 +77,7 @@ h3 {
   animation: rainbow 5s linear infinite;
 }
 .hero-image .arrowLinks {
+  margin-top: 50px;
   color: black;
 }
 
