@@ -1,4 +1,5 @@
-body {
+body,
+html {
   font-family: century gothic;
   height: 100%;
 }
@@ -405,6 +406,13 @@ main #main-content #paintings .painting-img {
   }
 }
 @media screen and (min-width: 992px) {
+  body {
+    margin-top: 4vh;
+  }
+
+  .hero-image {
+    height: 96vh;
+  }
   .hero-image #carouselExampleCaptions {
     width: 50%;
   }
