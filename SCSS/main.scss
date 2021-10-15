@@ -1,13 +1,14 @@
 $img-shadow: 0 2px 3px 0 rgba(179, 179, 185, 0.555),
   0 4px 10px 0 rgba(161, 161, 167, 0.562);
 
-body {
+body,
+html {
   font-family: century gothic;
   height: 100%;
 }
 body,
 h3 {
-  margin-top: 50px;
+  margin-top: 6vh;
 }
 @keyframes rainbow {
   0% {
@@ -48,7 +49,7 @@ h3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/Shara-Hughes_Wil-Driscoll_lo-res_13-1200x0-c-default.jpg);
 
-  height: 95vh;
+  height: 94vh;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -82,6 +83,7 @@ h3 {
     }
   }
   .arrowLinks {
+    margin-top: 50px;
     color: black;
   }
 }
@@ -404,9 +406,12 @@ footer {
   }
 }
 
-
 @media screen and (min-width: 992px) {
+  body {
+    margin-top: 4vh;
+  }
   .hero-image {
+    height: 96vh;
     #carouselExampleCaptions {
       width: 50%;
     }
